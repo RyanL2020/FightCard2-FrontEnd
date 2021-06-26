@@ -1,0 +1,59 @@
+
+/* start of marque css*/
+body {
+	height: 100%;
+	display: flex; 
+	align-items: center;
+	justify-content: center;
+	background-color: rgb(250, 245, 244);
+}
+
+.box {
+	display: flex; 
+}
+
+.box .inner {
+	width: 400px;
+	height: 200px;
+	line-height: 200px;
+	font-size: 4em;
+	font-family: sans-serif;
+	font-weight: bold;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.box .inner:first-child {
+	background-color: rgb(51, 43, 43);
+	color: rgb(24, 194, 224);
+	transform-origin: right;
+	transform: perspective(100px) rotateY(-15deg);
+}
+
+.box .inner:last-child {
+	background-color: rgb(24, 194, 224);
+	color: rgb(20, 11, 1);
+	transform-origin: left;
+	transform: perspective(100px) rotateY(15deg);
+}
+
+.box .inner span {
+	position: absolute;
+	animation: marquee 5s linear infinite;
+}
+
+.box .inner:first-child span {
+	animation-delay: 2.5s;
+	left: -100%;
+}
+
+@keyframes marquee {
+	from {
+		left: 100%;
+	}
+
+	to {
+		left: -100%;
+	}
+}
+/* end of marquee css */
