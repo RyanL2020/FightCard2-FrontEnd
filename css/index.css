@@ -57,3 +57,46 @@ body {
 	}
 }
 /* end of marquee css */
+
+/* new fighter form css */
+.container {
+    padding: 1rem;
+    width: stretch;
+    height: auto;
+    display: none;
+    background: rgb(24, 194, 224);
+    opacity: .8;
+  }
+  
+  .add-fighter-form {
+    width: 80%
+  }
+  
+  .submit {
+    position: relative;
+    background-color: #050505;
+    border-radius: 5px;
+    height: 2rem;
+    width: max-content;
+    color: whitesmoke;
+    font-size: 18px;
+    justify-self: center;
+    font-family: monospace;
+    margin: 3px;
+  }
+  
+  .submit:hover {
+    background-color: whitesmoke;
+    border: #1a1818 solid 1px;
+    color: #4be0d3;
+  }
+  
+  
+  .input-text {
+    border-radius: 5px;
+    height: 2rem;
+    width: 60%;
+    font-size: 18px;
+    font-family: monospace;
+    margin: 3px;
+  }
